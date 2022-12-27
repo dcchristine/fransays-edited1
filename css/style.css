@@ -1,0 +1,2453 @@
+/* GENERAL CSS STYLING */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+@font-face {
+    font-family:"PortLligatSans";
+    src: url("-Regular.ttf") format("tft");
+    }
+
+.backtotop{
+    position: fixed;
+    background-image: url(../images/scrolltop.png);
+    background-repeat: no-repeat;
+    height: 8%;
+    right: 0.6%;
+    font-size: 1em;
+    color: #3d1429;
+    top: 89%;
+    width: 4%;
+    outline: 2px #3D1429;
+    box-shadow: 10px 10px 20px  #26002b;
+
+}
+
+.backtotop:hover{
+   box-shadow: 10px 10px 60px  #e3b2b5;
+}
+
+
+.headings{
+    font-size: 120px;
+    padding-bottom: 10px;
+}
+.subheadings {
+    font-size: 40px;
+}
+
+.horizontal{
+    width: 100%;
+    height: 2px;
+    position: relative;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+.descriptions {
+  color:beige;
+  font-size: 20px;
+}
+
+.mainbackground{
+    width: 100%;
+    height: 100% ;
+    position: absolute;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(89, 8, 69, 0.086),rgba(97, 11, 109, 0.282)),url(../images/background.jpg);
+}
+
+.bgno2 img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 135%;
+    position: absolute;
+    top: 470%;
+    background: linear-gradient(rgba(89, 8, 69, 0.086),rgba(97, 11, 109, 0.282));
+}
+
+.colorbg{
+    background-color:#c594b0cd;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    top:100%;
+    height: 1900px;
+}
+
+.logo{
+    height: 50px;
+    right: 10px;
+    box-shadow: 5px 2px 20px  #26002b;
+}
+
+.navibar{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(87, 27, 83, 0.80) ;
+    margin: auto;
+    padding: 20px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px  #26002b;
+}
+
+.navibar hr{
+    width: 25%;
+    height: 1%;
+    left: 10px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.navibar li{
+    outline:#f4c6e3 solid 2px;
+    box-shadow: 2px 2px 20px  #26002b;
+    
+}
+
+.navibar ul li{
+    list-style: none;
+    size: 15px;
+    display: inline-block; 
+    margin: 0 8px;
+    padding: 2px 25px;
+    position: relative;
+}
+
+.navibar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.navibar ul li a::after{
+    content: '';
+    height: 29px;
+    width: 0;
+    background:#ff94e286;
+    box-shadow: 5px 5px 20px  #e381c95b;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.navibar ul li a:hover::after{
+    width: 100%;
+    box-shadow: 5px 5px 20px inset #3500275b;
+}
+
+.homefooter{
+    padding: 4% 3% 8% 1%;
+    position: absolute;
+    top: 170em;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.socialmedia{
+    margin: 6em 0 0 4em;
+}
+
+.socialmedia img{
+    height: 5em;
+}
+
+.rights{
+    margin: 5em 0.5em 0 1.4em;
+}
+
+.pages{
+    margin-top: 4em;
+    margin-left: 1.5em;
+    width: 15%;
+    padding: 0;
+}
+
+.pages p,.pages a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'PortLligatSans';
+}
+
+.pages hr{
+    margin-left: 2.5em;
+   width: 60%; 
+   background-color: whitesmoke;
+}
+
+.companyinfo{
+    margin-top: 4em;
+    margin-left: 3em;
+    width: 15%;
+    padding: 0;
+    color: whitesmoke;
+}
+
+.companyinfo h4{
+    color:#e3b2b5 ;
+}
+
+.companyinfo p,.companyinfo a{
+    font-family: 'PortLligatSans';
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.companyinfo hr{
+    margin-left: -0em;
+    width: 100%; 
+    background-color: whitesmoke;
+}
+
+.footertext{
+    margin-top: 3em;
+    margin-left: -2.5em;
+}
+
+.footertext img{
+    padding: 2%;
+    margin: 2%;
+    height: 4em;
+}
+
+.footertext p{
+    width: 60%;
+    font-size: large;
+    text-align: center;
+    position: relative;
+    left: 15%;
+}
+
+.content{
+    text-align: center;
+    margin: 15% 1%;
+    color:#3D1429;
+    font-size: 20px;
+    
+}
+/* HOMEPAGE CSS WEBSITE LAYOUT*/
+
+.welcomemsg{
+    outline: #e6bfdc auto;
+    position: absolute;
+    text-align: center;
+    top: 10em;
+    padding: 1em 2%;
+    left: 2%;
+    color:#3D1429;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #e6bfdc;
+}
+
+.promotions{
+    height: 2600px;
+    background-color: #e6bfdc;
+    width: 100%;
+    position: absolute;
+    top: 713px;
+}
+
+.promotion1{
+    height: 775px;
+    color: #442340;
+}
+
+.promotion1 h1{
+    text-shadow: 1px 1px 2px #2e252d;
+    position: absolute;
+    font-size: 80px;
+    color: #3D1429;
+    top:100px;
+    left: 55%;
+}
+
+.promotion1 h3{
+    text-shadow: 1px 1px 2px #2e252d;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    top: 300px;
+    right: 20px;
+}
+
+.promotion1 p{
+    text-shadow: 1px 1px 25px #2e252d;
+    font-family: 'PortLligatSans';
+    width: 40%;
+    font-size: 30px;
+    position: absolute;
+    top: 325px;
+    right: 20px;
+}
+
+.promotion1 button{
+    text-shadow: 1px 1px 5px #673c60;
+    width: 30%;
+    height: 70px;
+    font-size: 40px;
+    color: #3D1429;
+    position: absolute;
+    right: 60px;
+    top: 660px;
+}
+
+.promotion1 button:hover{
+    transition: 0.2s;
+    background-color: #4423407c;
+}
+
+
+.ubehalaya{
+    position: absolute;
+    height: 30em;
+    transform: rotate(15deg);
+    left:31%;
+    top:7%;
+}
+
+.ubehalaya:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+    height: 550px;
+}
+
+.blackabyss{
+    position: absolute;
+    height: 500px;
+    transform: rotate(-10deg);
+    left:12%;
+    top:4%;
+}
+
+.blackabyss:hover{
+    transition: 1s;
+transform: rotate(0deg);
+height: 550px;
+}
+
+
+.promotion2{
+    height: 775px;
+    width: 100%;
+    color: #442340;
+    position: absolute;
+    top: 765px;
+}
+
+.nailartpromo{
+    height: 800px;
+    width:720px;
+    position: absolute;
+    right: 1px;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+
+.promotion2 h1{
+    text-shadow: 1px 1px 2px #2e252d;
+    font-size: 80px;
+    color: #3D1429;
+    width: 50%;
+    margin: 100px 30px 20px 30px;
+}
+
+.promotion2 h3{
+    text-shadow: 1px 1px 3px #2e252d;
+    font-size: 40px;
+    margin: 0 30px 20px 30px;
+}
+
+.promotion2 p{
+    text-shadow: 1px 1px 25px #2e252d;
+    font-family: 'PortLligatSans';
+    font-size: 35px;
+    margin: 0 30px 20px 30px;
+    width: 45%;
+}
+
+.promotion2 button:hover{
+    transition: 0.2s;
+    background-color: #4423407c;
+}
+.promotion2 button{
+    text-shadow: 1px 1px 2px #2e252d;
+    width: 30%;
+    height: 70px;
+    font-size: 40px;
+    color: #3D1429;
+    margin:30px;
+    margin-left: 250px;
+}
+
+.promotion3{
+    height: 775px;
+    width: 100%;
+    color: #442340;
+    position: absolute;
+    top: 60.2%;
+}
+
+.spapromopackagepromo{
+    height: 49em;
+    width:49.5em;
+    position: absolute;
+    left: 1px;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+.promotion3 h1{
+    text-shadow: 1px 1px 2px #2e252d;
+    position: absolute;
+    font-size: 80px;
+    color: #3D1429;
+    top:100px;
+    left: 55%;
+}
+
+.promotion3 h3{
+    text-shadow: 1px 1px 3px #2e252d;
+    font-size: 40px;
+    text-align: right;
+    position: absolute;
+    top: 300px;
+    right: 5em;
+}
+
+.promotion3 p{
+    text-shadow: 1px 1px 25px #2e252d;
+    font-family: 'PortLligatSans';
+    width: 40%;
+    font-size: 30px;
+    position: absolute;
+    top: 12em;
+    right: 20px;
+}
+
+.promotion3 button{
+    text-shadow: 1px 1px 2px #2e252d;
+    width: 30%;
+    height: 70px;
+    font-size: 40px;
+    color: #3D1429;
+    position: absolute;
+    right: 60px;
+    top: 15em;
+}
+
+.promotion3 button:hover{
+    transition: 0.2s;
+    background-color: #4423407c;
+}
+
+
+.bgno3{
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: 530%;
+    opacity: 5;
+}
+
+.whitebg{
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 191em;
+    background-color: #f4e8e8;
+}
+
+.benefitlist{
+    background-color: #3D1429;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 14.5%;
+    height: 45rem;
+    width:71%;
+    outline: #3D1429 solid 1px;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.benefitlist img{
+    position: absolute;
+    top: 48%;
+    left: 0;
+    height: 52%;
+    width:100%;
+}
+
+.benefitlist h3{
+    color: #3D1429;
+    text-align: right;
+    position: absolute;
+    top: 60%;
+    right: 2%;
+    font-size: 5em;
+}
+
+.benefitlistsubs{
+    color: #3D1429;
+    text-align: right;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    padding: 10px;
+    font-size: 2em;
+    font-family: 'PortLligatSans';
+    font-weight:900;
+}
+
+.benefit1{
+    background-color: #e3b2b5;    ;
+    color: #3D1429;
+    font-size: 20px;
+    text-align: justify;
+    height:45%;
+    width: 30%;
+    padding-top: 5%;
+    margin: 10px 0 5px 20px;
+}
+
+.benefit1 p{
+    text-align: center;
+    font-size: 40px;
+}
+
+.benefit1 span{
+    position: absolute;
+    margin: 0% 3%;
+    width: 25%;
+    font-family: 'PortLligatSans';
+    font-weight:900;
+}
+
+.benefit1:hover{
+    background-color: #d1c3cf7c;
+    transition: 1s;
+    color: white;
+}
+
+
+.benefit2{
+    background-color:#e7cdcd;
+    color: #442340;
+    position: absolute;
+    font-size: 20px;
+    height:45%;
+    width: 30%;
+    text-align: center;
+    padding-top: 5%;
+    top: 12px;
+    left:34.8%;
+}
+
+.benefit2 p{
+    text-align: center;
+    font-size: 40px;
+}
+
+.benefit2 span{
+    position: absolute;
+    margin: 5% 3%;
+    width: 80%;
+    left: 9%;
+    text-align: justify;
+    font-family: 'PortLligatSans';
+    font-weight:900;
+}
+.benefit2:hover{
+    background-color: #d1c3cf7c;
+    transition: 1s;
+    color: white;
+}
+
+
+.benefit3{
+    background-color:#f4e8e8;
+    color: #442340;
+    position: absolute;
+    font-size: 20px;
+    height:45%;
+    width: 30%;
+    text-align: center;
+    padding-top: 5%;
+    top: 13px;
+    left:68%;
+}
+
+.benefit3 p{
+    text-align: center;
+    font-size: 40px;
+}
+
+.benefit3 span{
+    position: absolute;
+    margin: 5% 3%;
+    width: 80%;
+    left: 9%;
+    text-align: justify;
+    font-family: 'PortLligatSans';
+    font-weight:900;
+}
+
+.benefit3:hover{
+    background-color: #d1c3cf7c;
+    transition: 1s;
+    color: white;
+}
+
+.dummyrating1{
+    position: absolute;
+    text-align: justify;
+    color: #461340;
+    top:250em;
+    left: 1%;
+    height: 30%;
+    width: 75%;
+    box-shadow: 3px 3px 20px  #26002b;
+}
+
+.dummyrating1:hover{
+    transition: 500ms;
+    background-color: #3d1429;
+    box-shadow: 10px 10px 20px  #26002b;
+    color: white;
+}
+
+.dummyrating2:hover{
+    transition: 500ms;
+    background-color: #3d1429;
+    box-shadow: 10px 10px 20px  #26002b;
+    color: white;
+}
+
+.dummyrating3:hover{
+    transition: 500ms;
+    background-color: #3d1429;
+    box-shadow: 10px 10px 20px  #26002b;
+    color: white;
+}
+
+.dummyrating1 p{
+    font-size: 3em;
+    padding:2% 2% 0 2%;
+}
+
+.dummyrating1 span{
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    font-size: 2em;
+}
+
+.dummyrating2{
+    color: #461340;
+    text-align: justify;
+    position: absolute;
+    top:265.5em;
+    left: 10%;
+    height: 30%;
+    width: 75%;
+    box-shadow: 3px 3px 20px  #26002b;
+}
+
+.dummyrating2 p{
+    font-size: 3em;
+    padding:0% 2% 0 2%;
+    text-align: center;
+}
+
+.dummyrating2 span{
+    position: absolute;
+    top: 70%;
+    left: 80%;
+    font-size: 2em;
+}
+
+.dummyrating3{
+    color: #461340;
+    text-align: justify;
+    position: absolute;
+    top:281em;
+    width: 75%;
+    left: 24%;
+    height: 30%;
+    box-shadow: 3px 3px 20px  #26002b;
+}
+
+.dummyrating3 p{
+    text-align: right;
+    font-size: 3em;
+    padding:2% 4% 0 2%;
+}
+
+.dummyrating3 span{
+    position: absolute;
+    left: 12%;
+    font-size: 2em;
+    top: 70%;
+}
+
+.homefooter{
+    position: absolute;
+    top: 298em;
+    left: 0%;
+    height: 10%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.homefooter p,hr{
+    margin: 0 20px;
+}
+
+/* PROMO PACKAGES CSS LAYOUT */
+.promopackages{
+    background-color: #e6bfdc;
+    padding-top: 3%;
+    color: #3D1429;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.allhandspackage-mainimg{
+    width: 100%;
+}
+
+.allhandspackage h1,.allhandspackage h3{
+    color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 70%;
+    left: 25%;  
+    text-shadow: 2px 2px 8px #2e172b;
+}
+
+.allhandspackage h3{
+    font-size:30px ;
+    top: 100%;
+    width: 50%;
+    text-indent: 2em;
+}
+
+.promopackageinclusion{
+    padding: 2%;
+    background-color: #e6bfdc;
+    height: 30%;
+    display: flex;
+}
+
+.promocol1,.promocol3{
+    background-color: #3d1429;
+    color: #f4c6e3  ;
+    width: 30%;
+    padding-bottom:1%;
+    text-align: center;
+    margin-left: 2.7%;
+}
+
+.promocol1 img,.promocol3 img,.promocol2 img{
+    width: 100%;
+}
+
+.promocol2{
+    background-color: #3d1429;
+    color: #f4c6e3  ;
+    width: 30%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.feetcarepackage h1,.feetcarepackage h3{
+    color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 250%;
+    left: 10%;
+    text-shadow: 2px 2px 8px #2e172b;
+}
+
+.feetcarepackage h3{
+    text-indent: 2em;
+    font-size: 30px;
+    top: 280%;
+    width: 70%;
+}
+
+.basiccarepackage h1,.basiccarepackage h3{
+    text-align: right;
+    color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 420%;
+    right: 10%;
+    text-shadow: 2px 2px 8px #2e172b;
+}
+
+.basiccarepackage h3{
+    font-size: 30px;
+    top: 450%;
+    width: 70%;
+}
+
+.spapackage h1,.spapackage h3{
+    text-align: right;
+    color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 590%;
+    right: 10%;
+    text-shadow: 2px 2px 8px #2e172b;
+}
+
+.spapackage h3{
+    font-size: 30px;
+    top: 620%;
+    width: 70%;
+}
+
+.prettynailspackage h1,.prettynailspackage h3{
+    text-align: right;
+    color: whitesmoke;
+    font-size: 80px;
+    position: absolute;
+    top: 760%;
+    right: 10%;
+    text-shadow: 2px 2px 8px #2e172b;
+}
+
+.prettynailspackage h3{
+    font-size: 30px;
+    top: 790%;
+    width: 70%;
+}
+
+.promopackagefooter{
+    height: 10em;
+    position: absolute;
+    padding: 4% 3% 8% 1%;
+    top: 895%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.promopackagefooter p,hr{
+    margin: 0 20px;
+}
+
+/* PRODUCTS PAGE CSS WEBSITE LAYOUT */
+
+.productspage{
+    text-align: center;
+    margin: 15% 3%;
+    color:#3D1429;
+    font-size: 20px;
+}
+
+.productspage h4 {
+    background-color: whitesmoke;
+    color:#442340; 
+    font-size: 20px;
+    opacity: 0.5;
+    width: 75%;
+    position: absolute;
+    left:13%;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 3%;
+    margin-bottom: 20px;
+}
+
+
+.products span{
+    color: #442340;
+    font-size: 10px;
+    opacity: 0.4;
+    position: absolute;
+    left:0%;
+    text-align: justify;
+}
+
+.productnavigation{
+    display: flex;
+    position: relative;
+    margin: 3% 0% 17.2% 10%;
+    padding: 1em 6em 0em 6em;
+}
+
+.productnavigation span{
+    padding: 0em 3em 0em 3em;
+}
+
+.productnavigation a{
+    text-decoration: none;
+    color: #3D1429;
+}
+
+.productnavigation a:hover{
+
+    background-color: #ff98cd75;
+    padding: 0.5rem;
+    transition-duration: 0.5s;
+    font-size: 1.2em;
+}
+
+.productnavigation hr{
+    width: 5px;
+    height: 30px;
+    color: #f4e8e8;
+    background-color: #e6bfdc;
+}
+
+.nailcolorlacquer{
+    background-color: #3D1429;
+    color:#f4e8e8;
+    position: absolute;
+    height: 260%;
+    width: 100%;
+    padding-top: 50px;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.nailcolorlacquer h1{
+    font-size: 100px;
+    position: absolute;
+    top: 90px;
+    left: 25%;
+}
+
+.nailcolorbg1{
+    height:250px;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.product1{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 30px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product1 h3{
+    margin: 20px 10px;
+}
+
+.product1 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product1 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product2{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    left: 30%;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product2 h3{
+    margin: 20px 10px;
+}
+
+.product2 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product2 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product3{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    left: 60%;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product3 h3{
+    margin: 20px 10px;
+}
+
+.product3 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product3 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product4{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    top: 780px;
+    right: 10px;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product4 h3{
+    margin: 20px 10px;
+}
+
+.product4 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product4 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product5{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    top: 780px;
+    right: 475px;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product5 h3{
+    margin: 20px 10px;
+}
+
+.product5 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product5 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product6{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    top: 780px;
+    right: 950px;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product6 h3{
+    margin: 20px 10px;
+}
+
+.product6 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product6 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+
+.product7{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    margin: 30px 60px;
+    top: 1280px;
+    border-radius: 30px;
+}
+
+.product7 h3{
+    margin: 20px 10px;
+}
+
+.product7 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product7 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:8%;
+    transform: rotate(-30deg);
+}
+
+.product8{
+    height: 22%;
+    width: 25%;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    left: 30%;
+    top: 1280px;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product8 h3{
+    margin: 20px 10px;
+}
+
+.product8 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product8 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product9{
+    height: 22%;
+    width: 25%;
+    top: 1280px;
+    color: #3D1429;
+    font-size: 50px;
+    text-align: right;
+    background-color: #f4e8e8;
+    position: absolute;
+    left: 60%;
+    margin: 30px 60px;
+    border-radius: 30px;
+}
+
+.product9 h3{
+    margin: 20px 10px;
+}
+
+.product9 p{
+    font-size: 17px;
+    font-family: 'PortLligatSans';
+    width: 30%;
+    position: relative;
+    left: 65%;
+}
+
+.product9 img{
+    position: absolute;
+    height:400px;
+    top: 1%;
+    left:6%;
+    transform: rotate(-30deg);
+}
+
+.product1:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #673c60;
+}
+
+.product1 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product2:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #8d4b35;
+}
+
+.product2 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product3:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #8e5d70;
+}
+
+.product3 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product4:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #0a4925;
+}
+
+.product4 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product5:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #73212f;
+}
+
+.product5 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product6:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #7a7d83;
+}
+
+.product6 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product7:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #111113;
+}
+
+.product7 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product8:hover{
+    transition: 2s;
+    color: #f4c6e3;
+    background-color: #16336a;
+}
+
+.product8 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.product9:hover{
+    transition: 2s;
+    color: #3D1429;
+    background-color: #cccccc;
+}
+
+.product9 img:hover{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.nailcaretools{
+    background-color: #e6bfdc   ;
+    color: #3D1429;
+    top:160em;
+    position: absolute;
+    height: 104%;
+    width: 100%;
+    padding: 50px 15px 0px 0px;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.pexelimg1 img{
+    height: 99%;
+    width: 22%;
+    background: linear-gradient(rgba(89, 8, 69, 0.086),rgba(97, 11, 109, 0.282)),;
+    background-color: rgb(252, 245, 237);
+    top: 0.2%;
+    position:absolute;
+    color: beige;
+}
+
+.nailcolorimg1{
+    position: absolute;
+    top: 495%;
+    background-color:#f4c6e3;
+    height: 40%;
+    width: 100%;
+    margin-top: 40%;
+}
+
+.liquidbundle{
+    height: 80%;
+    width: 27%;
+    background-color: #3D1429;
+    left: 13em;
+    top: 9em;
+    position:absolute;
+    padding: 2px 0;
+    color: beige;
+    box-shadow: 10px 10px 20px  #26002b;
+    outline: auto beige;
+    outline-offset: -4px;
+}
+
+.liquidbundle:hover{
+    left: 9.5em;
+    transition: 1s;
+    top:4.7em;
+    transform: scale(1.25);
+    box-shadow: 20px 20px 50px  #2e252d;
+}
+
+.liquidbundle img{
+
+    height: 70%;
+    margin:10px 25px;
+
+}
+
+.nailcare-h1{
+    color: #e7cdcd;
+    width: 80%;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.nailcare-p{
+    position: absolute;
+    top: 84%;
+    left: 2%;
+    font-family: 'PortLligatSans';
+    font-size: 20px;
+    width: 87%;
+    margin: 0 19px;
+    background-color:none;
+    color:beige;
+    height: fit-content;
+}
+
+.toolset{
+    height: 80%;
+    width: 27%;
+    background-color: #3D1429;
+    left: 41%;
+    top: 1em;
+    position:absolute;
+    padding: 2px 0;
+    color: beige;
+    box-shadow: 10px 10px 20px  #26002b;
+    outline: auto beige;
+    outline-offset: -4px; 
+}
+
+.toolset:hover{
+    left: 37.5%;
+    transition: 1s;
+    top:4.5em;
+    transform: scale(1.25);
+}
+
+.toolset img{
+    height: 60%;
+    margin:10px 20px;
+}
+
+
+.bundle{
+    height: 80%;
+    width: 27%;
+    background-color: #3D1429;
+    left: 68.5%;
+    top: 9em;
+    position:absolute;
+    padding: 2px 0;
+    color: beige;
+    box-shadow: 10px 10px 20px  #26002b;
+    outline: auto beige;
+    outline-offset: -4px;
+}
+
+.bundle:hover{
+    left: 65%;
+    top: 5em;
+    transition: 1s;
+    transform: scale(1.25);
+}
+
+.bundle img{
+    height: 66%;
+    margin:10px 20px;
+}
+
+.nailartneeds{
+    color: beige;
+    top:450%;
+    position: absolute;
+    height: 130%;
+    width: 100%;
+    padding: 50px 15px 0px 0px;
+    border-radius: 0.5em;
+}
+
+.nailartneeds-h1{
+
+    font-size: 90px;
+    color: #f4e8e8;
+    text-align: center;
+    background-color: #3d1429;
+    width: 100%;
+    margin-left: 7px;
+}
+
+.nailartneeds img{
+    height: 280px;
+    width: 280px;
+    background: #e6bfdc;
+    left: 2%;
+    top: 15px;
+    position:absolute;
+    color: beige;
+    border-radius: 3em;
+    box-shadow: 20px 20px 30px  #1b011a;
+}
+
+.nailartneeds p{
+    font-size: 30px;
+    width: 50%;
+    margin: 2% 0 0 55%;
+    position: absolute;
+    color:#f4e8e8;
+}
+
+.nailartneeds span{
+    color: #ffdcdc;
+    font-family: 'PortLligatSans';
+    position: absolute;
+    width: 40%;
+    margin: 20% 0 0 55%;
+    font-size: 18px;
+    opacity: 3;
+}
+
+.dottingtool{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    left: 6em;
+    top: 18%;
+    position:absolute;
+    color: beige;
+    border-radius: 0.5em;
+}
+
+.dottingtool:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+.nailpolishpencorrector{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    left: 6em;
+    top: 53%;
+    position:absolute;
+}
+
+.nailpolishpencorrector:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+
+.nailartstencil{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    left: 6em;
+    top: 88%;
+    position:absolute;
+}
+
+.nailartstencil:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+
+.nailartbrush{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    right: 6em;
+    top: 88%;
+    position:absolute;
+}
+
+.nailartbrush:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+
+.nailartstamper{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    right: 6em;
+    top: 53%;
+    position:absolute;
+}
+
+.nailartstamper:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+
+.glittersandsequins{
+    height: 32%;
+    width: 40%;
+    background: #3d1429c5;
+    right: 6em;
+    top: 18%;
+    position:absolute;
+    color: beige;
+    border-radius: 0.5em;
+}
+
+.glittersandsequins:hover{
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: #3d1429;
+}
+
+.productfooter{
+    height: 10em;
+    padding: 4% 3% 8% 1%;
+    position: absolute;
+    top: 615%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.productfooter p,hr{
+    margin: 0 20px;
+}
+
+
+/* SERVICES CSS WEBSITE LAYOUT */
+
+.servicespage{
+    color:#3D1429;
+    font-size: 20px;
+}
+
+.servicespage h1{
+    font-size: 250px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+
+.servicespage h4 {
+    background-color: whitesmoke;
+    padding-right: 2%;
+    text-align: right;
+    color:#442340; 
+    font-size: 30px;
+    opacity: 0.6;
+    width: 60%;
+    position: absolute;
+    left:6%;
+    top: 93%;
+}
+
+.manicurejump{
+    position: absolute;
+    top: 18%;
+    left: 6%;
+    text-align: center;
+}
+
+.manicurejump img{
+    height: 250px;
+    width: 425px;
+    outline: auto whitesmoke;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.manicurejump p{
+    position: inherit;
+    color: whitesmoke;
+    top: 40% ;
+    font-size: 50px;
+    background:#3d1429a8;
+    width: 100%;
+    
+}
+
+.pedicurejump{
+    position: absolute;
+    top: 18%;
+    left: 38%;
+    text-align: center;
+}
+
+.pedicurejump img{
+    height: 255px;
+    width: 425px;
+    outline: auto whitesmoke;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.pedicurejump p{
+    position: inherit;
+    color: whitesmoke;
+    top: 40% ;
+    font-size: 50px;
+    background:#3d1429a8;
+    width: 100%;
+    
+}
+
+.nailartjump{
+    position: absolute;
+    top: 18%;
+    left: 69%;
+    text-align: center;
+}
+
+.nailartjump img{
+    height: 500px;
+    outline: auto whitesmoke;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.nailartjump p{
+    position: inherit;
+    color: whitesmoke;
+    top: 40% ;
+    font-size: 50px;
+    background:#3d1429a8;
+    width: 100%;
+    
+}
+
+.servicesnavigation .nailartjump:hover{
+    background-color: #3d1429;
+    height: 50px;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.servicesnavigation .manicurejump:hover{
+    background-color: #3d1429;
+    height: 50px;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.servicesnavigation .pedicurejump:hover{
+    background-color: #3d1429;
+    height: 50px;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.manicure{
+    height: 100%;
+    position: absolute;
+    top: 102%;
+    left:0%; 
+    border-radius: 3px;
+}
+
+.manicure img{
+    height: 100%;
+    width: 80%;
+    box-shadow: 10px 10px 30px  #26002b;
+    opacity: 0.95;
+    border-radius: 4px;
+}
+.manicure h3 {
+    position: absolute;
+    padding: 1%;
+    top:5%;
+    left: 74%;
+    color: #3D1429;
+    font-size: 100px;
+}
+
+.manicure h5{
+    width: 30%;
+    position: absolute;
+    padding: 1%;
+    top:40%;
+    left: 74%;
+    color: #3D1429;
+    font-size: 40px;
+}
+
+.manicurearticles{
+    text-align: center;
+    text-decoration: none;
+    width: 30%;
+    position: absolute;
+    padding: 1%;
+    top:55%;
+    left: 74%;
+    color: #3D1429;
+    font-size: 40px;
+}
+
+.manicurearticles button{
+    background-color: #3d1429;
+    color: #cccccc;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.manicurearticles button:hover{
+    background-color: #673c60;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.manicure span{
+    height: 100%;
+    padding: 5% 20%;
+    background-color:whitesmoke;
+    position: absolute;
+    left:70%;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+
+.manicure p{
+    padding: 1%;
+    width: 70%;
+    background-color:whitesmoke;
+    position: absolute;
+    text-align: justify;
+    top:2%;
+    left:1%;
+    color: #3D1429;
+    font-size: 25px;
+    font-family: 'PortLligatSans';
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+.pedicure{
+    color: #3D1429;
+    height: 100%;
+    position: absolute;
+    top: 205%;
+    right:0%; 
+}
+
+.pedicure h5{
+    width: 30%;
+    position: absolute;
+    padding: 1%;
+    top:40%;
+    right: 115%;
+    color: #3D1429;
+    font-size: 40px;
+}
+
+.pedicurearticles{
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    position: absolute;
+    padding: 1%;
+    top:59%;
+    right: 105%;
+    color: #3D1429;
+    font-size: 40px;
+}
+
+.pedicurearticles button{
+    background-color: #3d1429;
+    color: #cccccc;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.pedicurearticles button:hover{
+    background-color: #673c60;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.pedicure img{
+    height: 100%;
+    position: relative;
+    width: 98%;
+    box-shadow: 20px 20px 30px  #26002b;
+    opacity: 0.85;
+    border-radius: 4px;
+}
+
+.pedicure h3 {
+
+    position: absolute;
+    padding: 1%;
+    top:5%;
+    right: 106%;
+    color: #3D1429;
+    font-size: 100px;
+}
+
+.pedicure span{
+    height: 100%;
+    padding: 5% 30%;
+    background-color:whitesmoke;
+    position: absolute;
+    right:100%;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+
+.pedicure p{
+    padding: 1%;
+    background-color:whitesmoke;
+    position: absolute;
+    text-align: justify;
+    top:2%;
+    right: 3%;
+    color: #3D1429;
+    font-size: 25px;
+    font-family: 'PortLligatSans';
+    font-weight: 800;
+    border-radius: 3px;
+    width: 85%;
+}
+
+.nailartbg{
+    position: absolute;
+    background-color: #d7b4d4;
+    top: 308%;
+    height: 230%;
+    width: 100%;
+}
+
+.nailart {
+    top: 310%;
+    height: 100%;
+    width: 85%;
+    left: 7%;
+    color: #3d1429;
+    position: absolute;
+}
+
+.nailart h3{
+    background-color: #ffffff61;
+    padding: 2% 3%;
+    position: absolute;
+    height: 210%;
+    box-shadow: 10px 10px 30px  #26002b;
+    border-radius: 10px;
+    top:5%;
+    color: #3d1429;
+    font-size: 100px;
+}
+
+.nailartdesign1{
+    position: relative;
+    width: 100%;
+    top: 30%;
+    color: #442340;
+    left: 5%;
+    padding: 3%;
+
+}
+
+.nailartdesign-p{
+        color: #3D1429;
+        position: relative;
+        width: 25%;
+        top: 50%;
+        left: 2%;
+        font-size: 16px;
+}
+
+.confettiglitter{
+    position: absolute;
+    height: 250px;
+    top: 35%;
+    left: 40%;
+    box-shadow: 10px 10px 30px  #26002b;
+    border-radius: 5px;
+}
+
+.confettiglitter:hover{
+    transform: scale(1.24);
+    transition: 1s;
+}
+
+.nailartdesign2{
+    position: relative;
+    top: 30%;
+    color: #442340;
+    left: 5%;
+    padding: 3%;
+
+}
+
+.embellishedNails{
+    position: absolute;
+    height: 250px;
+    width: 700px;
+    top: 78%;
+    left: 40%;
+    box-shadow: 10px 10px 30px  #26002b;
+    border-radius: 5px;
+}
+
+.embellishedNails:hover{
+    transform: scale(1.24);
+    transition: 1s;
+}
+
+.nailartdesign3{
+    position: relative;
+    top: 30%;
+    color: #442340;
+    left: 5%;
+    padding: 3%;
+
+}
+
+.chrome{
+    position: absolute;
+    height: 250px;
+    width: 700px;
+    top: 122%;
+    left: 40%;
+    box-shadow: 10px 10px 30px  #26002b;
+    border-radius: 5px;
+}
+
+.chrome:hover{
+    transform: scale(1.24);
+    transition: 1s;
+}
+
+.nailartdesign4{
+    position: relative;
+    top: 30%;
+    color: #442340;
+    left: 5%;
+    padding: 3%;
+}
+
+.glazedDonut{
+    position: absolute;
+    height: 250px;
+    width: 700px;
+    top: 165%;
+    left: 40%;
+    box-shadow: 10px 10px 30px  #26002b;
+    border-radius: 5px;
+}
+
+.glazedDonut:hover{
+    transform: scale(1.24);
+    transition: 1s;
+}
+
+.servicesfooter{
+    height: 10em;
+    padding: 4% 3% 8% 1%;
+    position: absolute;
+    top: 250em;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.servicesfooter p,hr{
+    margin: 0 20px;
+}
+
+
+/* AVAIL OUR OFFERS CSS WEBSITE LAYOUT */
+
+.availouroffers{
+    text-align: center;
+    margin: 8% 1%;
+    color:#3D1429;
+    font-size: 20px;
+}
+
+.violetbg{
+    background-color:#7d4076;
+    width: 100%;
+    position: absolute;
+    top:100%;
+    height: 1450px;
+}
+
+.availform{
+    text-align: left;
+    margin: 0 13%;
+    padding: 2% 3%;
+    height: 50%;
+    width: 75%;
+    font-size: 30px;
+    background-color: #3D1429;
+    color: #e6bfdc;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+
+.availform1{
+    text-align: center;
+    margin: 0 13%;
+    padding: 2% 3%;
+    height: 50%;
+    width: 75%;
+    font-size: 30px;
+    background-color: #3D1429;
+    color: #e6bfdc;
+    box-shadow: 10px 10px 30px  #26002b;
+}
+
+.availform1 button{
+    padding: 0 30px;
+}
+
+.availform1 button:hover{
+    transition: 500ms;
+    background-color: #c594b0cd;
+}
+
+.availform h1{
+    color: beige;
+    text-align: center;
+    margin: 5px;
+}
+
+.availform input {
+    width: 35%;
+    font-size: 20px;
+    font-family: 'PortLligatSans';
+    padding: 2px;
+    color: #3D1429;
+}
+
+.firstname {
+    margin: 1% 0% ;
+}
+
+.contactdetails{
+    margin: 1% 5%;
+}
+
+.address label{
+    margin: 1% 20%;
+    padding: 2% 0;
+}
+
+.address input{
+    margin-left: 300px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.productavail input{
+    font-size: 20px;
+    font-family: 'PortLligatSans';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+input[type=checkbox]{
+    accent-color: #bd78ae;
+    height: 30px;
+}
+
+.serviceavail input{
+    font-size: 20px;
+    font-family: 'PortLligatSans';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+.orderspecify input{
+    height: 50px;
+    width: 95%;
+}
+
+.availform1 a{
+    color: #3d1429;
+    text-decoration: none;
+}
+
+.availformfooter{
+    height: 10em;
+    padding: 4% 3% 8% 1%;
+    position: absolute;
+    top: 290%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.availformfooter p,hr{
+    margin: 0 20px;
+}
+
+/* ABOUT US CSS WEBSITE LAYOUT */
+
+.aboutuspage{
+    text-align: center;
+    margin: 7% 1% 2% 1%;
+    color:#3D1429;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.description{
+    background-color: #3D1429;
+    height: 400px;
+    width: 1225px;
+    margin-left: 8%;
+    color: #e3b2b5;
+    box-shadow: 10px 10px 20px  #26002b;
+}
+
+.description img{
+    height: 100%;
+    margin-left:70%;
+}
+
+.aboutusheadings{
+    color: #f4e8e8;
+    font-size: 80px;
+    width: fit-content;
+    position: relative;
+    bottom: 95%;
+    left: 5%;
+    padding: 3%;
+}
+
+.aboutussubheadings{
+    color: #f4e8e8;
+    font-family: 'Portligatsans';
+    text-align: left;
+    font-size: 20px;
+    width: 60%;
+    position: relative;
+    bottom: 95%;
+    left: 8%;
+}
+
+.members{
+    color: #f4e8e8;
+    background-color: #3d1429;
+    text-align: center;
+}
+
+.names{
+    background:  #f4e8e8;
+    color: #3D1429;
+    height: 45%;
+    display: flex;
+}
+
+.names h3{
+    font-size: 50px;
+    color: #e7cdcd;
+}
+
+.christine{
+  background-color: #3d1429;
+  width: 25%;
+  opacity: 1;
+  margin: 2% 5%;
+}
+
+.christinedetails{
+    background-color: #3d1429;
+    position: absolute;
+    padding-top: 90px;
+    top: 119%;
+    left: 1px;
+    height: 500px;
+    color:#f4c6e3 ;
+    width: 25%;
+    opacity: 0;
+    margin: 2% 5%;
+}
+
+.christine:hover{
+    transition: 2s;
+    opacity: 0.3;
+}
+
+.christinedetails:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.christine-img{
+    height: 370px;
+}
+
+.france{
+    background-color: #3d1429;
+    width: 25%;
+    margin: 2% 2.5%;
+  }
+
+  .francedetails{
+    background-color: #3d1429;
+    position: absolute;
+    padding-top: 90px;
+    top: 119%;
+    left: 32.5%;
+    height: 500px;
+    color:#f4c6e3 ;
+    width: 25%;
+    opacity: 0;
+    margin: 2% 5%;
+}
+
+.france:hover{
+    transition: 2s;
+    opacity: 0.3;
+}
+
+.francedetails:hover{
+    transition: 1s;
+    opacity: 1;
+}
+
+.france-img{
+    height: 370px;
+}
+
+
+.daniel{
+    background-color: #3d1429;
+    width: 25%;
+    margin: 2% 5%;
+  }
+
+  .danieldetails{
+    background-color: #3d1429;
+    position: absolute;
+    padding-top: 90px;
+    top: 119%;
+    left: 65%;
+    height: 500px;
+    color:#f4c6e3 ;
+    width: 25%;
+    opacity: 0;
+    margin: 2% 5%;
+}
+
+.daniel:hover{
+    transition: 2s;
+    opacity: 0.3;
+}
+
+.danieldetails:hover{
+    transition: 1s;
+    opacity: 1;
+}
+.daniel-img{
+    height: 370px;
+}
+
+.divider{
+    background: #3d1429;
+    width: 100%;
+    height: 50px;
+}
+
+.mission{
+    background-color:#442340;
+    height: 400px;
+}
+
+.mission img{
+    height: 150%;
+    width: 100%;
+}
+
+.contactus{
+    width: 40%;
+    position: relative;
+    left: 57%;
+    bottom: 45%;
+    color: #3d1429;
+}
+
+.contactus a{
+    color: #3d1429;
+    text-decoration: none;
+}
+
+.contactus button{
+    background-color: #3D1429;
+    outline: auto white;
+    height: 50px;
+}
+
+.contactus button:hover{
+    background-color: #bd78ae;
+}
+
+.contactus h3{
+    width: fit-content;
+    color: #3D1429;
+    font-size: 40px;
+}
+
+.aboutusfooter{
+    height: 10em;
+    padding: 4% 3% 8% 1%;
+    position: absolute;
+    top: 131em;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    color: #e3b2b5;
+    background-color:#442340;
+    box-shadow: 5px 5px 20px  #26002b;
+    display: flex;
+    align-items: center;
+}
+
+.aboutusfooter p,hr{
+    margin: 0 20px;
+}
